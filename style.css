@@ -1,0 +1,41 @@
+body {
+    margin: 0px;
+    background: rgb(22,26,48);
+    background: radial-gradient(circle, rgba(22,26,48,1) 40%, rgba(49,48,77,1) 100%);
+    color: var(--cream);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #161A30;
+    --light-navy: #31304D;
+    --gray: #B6BBC4;
+    --cream: #F0ECE5;
+}
+
+header {
+    border: 1px solid white;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 40vh;
+}
+
+.about-title {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.about-container {
+    height: 30vh;
+    width: 30vw;
+    padding: 1em;
+}
