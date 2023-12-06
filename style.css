@@ -14,6 +14,10 @@ body {
     box-sizing: border-box;
 }
 
+img {
+    transition: all 300ms;
+}
+
 @font-face {
     font-family: Roboto;
     src: url('/assets/Roboto-Regular.ttf');
@@ -92,7 +96,10 @@ ul img:hover {
 
 main {
     width: 80vw;
-    background: red;
+}
+
+h1 {
+    margin-left: 3em;
 }
 
 .preview {
@@ -101,7 +108,7 @@ main {
 
 .card {
     width: 15vw;
-    border: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr, 0.5fr;
@@ -110,17 +117,42 @@ main {
 .bottom {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-h4 {
+.project-title {
     font-size: 1.5em;
 }
 
 .top {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 li {
     list-style-type: none;
+}
+
+.preview, a {
+    object-fit: cover;
+    width: inherit;
+}
+
+a .preview:hover {
+    transform: scale(1.2);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1em;
+}
+
+.top ul li {
+    font-size: 12px;
+}
+
+.bottom-bottom {
+    padding: 12px;
 }
