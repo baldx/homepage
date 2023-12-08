@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background: var(--gray);
+    background: var(--cream);
     color: black;
     font-family: Roboto;
     font-weight: 600;
@@ -155,4 +155,45 @@ ul {
 
 .bottom-bottom {
     padding: 12px;
+}
+
+footer {
+    margin-top: 10em;
+    width: 100%;
+    background: var(--gray);
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.heading .title {
+    font-size: 2em;
+    margin-bottom: 8px;
+}
+
+.number, .email {
+    display: flex;
+    align-items: center;
+}
+
+.number img, .email img {
+    height: 2em;
+}
+
+.right img {
+    height: 50vh;
+}
+
+.personal ul {
+    display: flex;
+    justify-content: start;
+    padding: 0px;
 }
