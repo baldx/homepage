@@ -88,8 +88,7 @@ ul img:hover {
 
 .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;
     gap: 3em;
 }
@@ -117,6 +116,7 @@ h1 {
 .bottom {
     display: flex;
     flex-direction: column;
+    height: 150px;
 }
 
 .project-title {
@@ -133,13 +133,17 @@ li {
     list-style-type: none;
 }
 
-.preview, a {
+.preview, a, .card img {
     object-fit: cover;
     width: inherit;
 }
 
 a .preview:hover {
     transform: scale(1.2);
+}
+
+.card a {
+    height: 150px;
 }
 
 ul {
@@ -196,4 +200,49 @@ footer {
     display: flex;
     justify-content: start;
     padding: 0px;
+}
+
+@media screen and (max-width: 1600px) {
+    .project-title {
+        font-size: 20px;
+    }
+
+    .bottom-bottom {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .project-title {
+        font-size: 1em;
+    }
+
+    h1 {
+        margin-left: 6em;
+    }
+
+    .heading .title {
+        font-size: 50px;
+    }
+
+    .sub {
+        font-size: 36px;
+    }
+
+    .left {
+        margin-left: 48px
+    }
+
+    .road, .town, .number, .email {
+        font-size: 24px;
+    }
+
+    .personal ul img, .about-container ul img {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        box-shadow: none;
+    }
 }
